@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✨ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday Leslietot!!!</h1>
+    <p>
+      Wishing you a day filled with laughter, calm moments, and everything that makes you feel your best.
+      You deserve all the happiness and success this year has to offer — and maybe a few unexpected smiles along the way...
+      some of which I hope I can be the reason for.
+    </p>
+    <p><strong>From: Your Superman 🖤</strong></p>
+  </div>
+
+  <script>
+    // Generate floating snowflakes ❄
+    const numFlakes = 25;
+    for (let i = 0; i < numFlakes; i++) {
+      const flake = document.createElement("div");
+      flake.classList.add("snowflake");
+      flake.textContent = "❄";
+      flake.style.left = Math.random() * 100 + "vw";
+      flake.style.fontSize = 10 + Math.random() * 20 + "px";
+      flake.style.animationDuration = 5 + Math.random() * 5 + "s";
+      flake.style.animationDelay = Math.random() * 5 + "s";
+      document.body.appendChild(flake);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #000;
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Snowflake style */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 10px white;
+  animation: fall linear infinite;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Snowflake falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
